@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from "react-dom";
 import { EcosystemHeader} from "./lib";
-import { EcosystemWrapper } from "./lib";
+import { StateWrapper } from "./lib";
 
 const App = () => (
   <div>
-    <EcosystemWrapper>
+    <StateWrapper>
       <EcosystemHeader/>
-    </EcosystemWrapper>
+    </StateWrapper>
   </div>
 );
 

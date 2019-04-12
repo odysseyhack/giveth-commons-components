@@ -1,6 +1,6 @@
 {
-  "name": "@wip-abramson/ecosystem",
-  "version": "0.5.2",
+  "name": "@giveth/commons-components",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
