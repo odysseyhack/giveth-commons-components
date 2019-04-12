@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from "react-dom";
 import { CampaignHeader } from "./lib";
-import { StateWrapper } from "./lib";
+import { CommonsStateWrapper } from "./lib";
 
 const App = () => (
   <div>
-    <StateWrapper>
+    <CommonsStateWrapper>
       <CampaignHeader/>
-    </StateWrapper>
+    </CommonsStateWrapper>
   </div>
 );
 
