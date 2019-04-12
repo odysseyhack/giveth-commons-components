@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from "react-dom";
-import { EcosystemHeader} from "./lib";
+import { CampaignHeader } from "./lib";
 import { StateWrapper } from "./lib";
 
 const App = () => (
   <div>
     <StateWrapper>
-      <EcosystemHeader/>
+      <CampaignHeader/>
     </StateWrapper>
   </div>
 );
