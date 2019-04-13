@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import UserContext from '../context/User'
 
 const EcosystemDaiAction = ({ buttonName, actionText }) => {
-  const { state, dispatch } = React.useContext(UserContext)
+  const { dispatch } = React.useContext(UserContext)
   const spendFunds = () => dispatch({ type: userActions.spend, amount: 5000 })
 
   return (

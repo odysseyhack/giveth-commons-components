@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { CampaignHeader } from './lib'
-import { CommonsStateWrapper } from './lib'
+import { CampaignHeader, CommonsStateWrapper } from './lib'
 import UserComponent from './examples/UserComponent'
 
 const App = () => (
