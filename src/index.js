@@ -1,15 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { CampaignHeader, CommonsStateWrapper } from './lib'
-import {CommonsNavHeader} from './lib';
+import { CampaignHeader, CommonsStateWrapper, CommonsNavHeader } from './lib'
 
-
-import './lib/assets/styles/main.scss';
+import './lib/assets/styles/main.scss'
 
 const App = () => (
   <div>
     <CommonsStateWrapper>
-      <CommonsNavHeader/>
+      <CommonsNavHeader />
       <CampaignHeader />
     </CommonsStateWrapper>
   </div>
