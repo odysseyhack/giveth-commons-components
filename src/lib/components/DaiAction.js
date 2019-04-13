@@ -4,11 +4,10 @@
 import React from 'react'
 import { userActions } from '../state/userState'
 import PrimaryButton from '../stateless-components/PrimaryButton'
-import PropTypes from 'prop-types'
 
 import UserContext from '../context/User'
 
-const EcosystemDaiAction = ({ buttonName, actionText }) => {
+const EcosystemDaiAction = ({ children, actionText }) => {
   const { dispatch } = React.useContext(UserContext)
   const spendFunds = () => dispatch({ type: userActions.spend, amount: 5000 })
 
