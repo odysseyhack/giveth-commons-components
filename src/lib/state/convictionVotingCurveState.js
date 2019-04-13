@@ -13,6 +13,7 @@ export const cvActions = {
 };
 
 export function reducer(state, action) {
+  debugger;
   switch (action.type) {
     case cvActions.addMilestone:
       return {
