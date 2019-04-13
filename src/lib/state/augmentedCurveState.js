@@ -2,23 +2,31 @@
  * Created by will on 11/04/19.
  */
 export const initialState = {
-  curveName: "Will's Crowdfunding Campaign",
+  curveName: "",
   tokenPrice: 10,
   tokenSupply: 20000
 }
 
 export const curveActions = {
-  buyTokens: 'BUY'
-}
+  mintTokens: 'MINT',
+  burnTokens: 'BURN'
+};
 
 export function reducer (state, action) {
   switch (action.type) {
-    case curveActions.buyTokens:
+    case curveActions.mintTokens:
       return {
         ...state,
         tokenSupply: (state.tokenSupply + action.amount),
         tokenPrice: calculateNewPrice(state, action.amount)
       }
+    case curveActions.burnTokens: {
+      return {
+        ...state,
+      }
+    }
+    default:
+      return state
   }
 }
 
