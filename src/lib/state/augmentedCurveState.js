@@ -2,7 +2,7 @@
  * Created by will on 11/04/19.
  */
 export const initialState = {
-  curveName: '',
+  curveName: "",
   tokenPrice: 10,
   tokenSupply: 20000
 }
@@ -10,7 +10,7 @@ export const initialState = {
 export const curveActions = {
   mintTokens: 'MINT',
   burnTokens: 'BURN'
-}
+};
 
 export function reducer (state, action) {
   switch (action.type) {
@@ -22,7 +22,7 @@ export function reducer (state, action) {
       }
     case curveActions.burnTokens: {
       return {
-        ...state
+        ...state,
       }
     }
     default:
