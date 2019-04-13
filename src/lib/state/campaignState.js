@@ -1,6 +1,8 @@
 /**
  * Created by will on 13/04/19.
  */
+import {reducer as userReducer} from './userState';
+
 export const initialState = {
   name: "Planting trees in Indonesian Rainforest",
   curve: {
@@ -17,16 +19,20 @@ export const campaignActions = {
 export function reducer (state, action) {
   switch (action.type) {
     case campaignActions.mintTokens:
+
+      console.log("MINT TOKENS", action);
       // action { fundingAmount, tokenRecipient }
 
       //TODO call library calculate new supply and price
       // TODO update user state
-
       return {
-        ...state,
-        tokenSupply: (state.tokenSupply + action.amount),
-        tokenPrice: calculateNewPrice(state, action.amount)
-      }
+        ...state
+      };
+      // return {
+      //   ...state,
+      //   tokenSupply: (state.tokenSupply + action.amount),
+      //   tokenPrice: calculateNewPrice(state, action.amount)
+      // }
     case campaignActions.burnTokens: {
       // action { tokenAmount, withdrawalRecipient }
 
@@ -39,6 +45,8 @@ export function reducer (state, action) {
       }
     }
     default:
-      return state
+      return {
+        ...state
+      }
   }
 }

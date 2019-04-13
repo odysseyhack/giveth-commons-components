@@ -14,4 +14,4 @@ export function CampaignProvider({children}) {
   </CampaignContext.Provider>
 }
 
-export default CampaignProvider;
+export default CampaignContext;

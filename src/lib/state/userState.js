@@ -3,8 +3,13 @@
  */
 export const initialState = {
   user: {
-    name: 'Will',
-    totalBalance: 400000
+    name: "Will",
+    address: 12345,
+    balance: 10000,
+    tokenBalance: [{
+      tokenId: 1,
+      balance: 1000
+    }]
   }
 }
 
@@ -13,21 +18,16 @@ export const userActions = {
   spend: 'SPEND'
 }
 
-export function reducer (state, action) {
+export function reducer(state, action) {
   switch (action.type) {
     case userActions.login:
       return {
-        ...state,
-        user: action.user
-      }
+        ...state
+      };
     case userActions.spend:
 
-      return state.user ? {
-        ...state,
-        user: {
-          name: state.user.name,
-          totalBalance: state.user.totalBalance - action.amount
-        }
-      } : state
+      return {
+        ...state
+      }
   }
 }
