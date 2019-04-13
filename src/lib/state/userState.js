@@ -33,5 +33,6 @@ export function reducer(state, action) {
           tokenBalance: state.user.tokenBalance - action.tokensBurnt
         }
       };
+    
   }
 }
