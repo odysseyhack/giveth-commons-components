@@ -2,12 +2,15 @@ import React from 'react'
 import { render } from 'react-dom'
 import { CampaignHeader, CommonsStateWrapper } from './lib'
 import UserComponent from './examples/UserComponent'
+import {CommonsNavHeader} from './lib';
+
+import './lib/assets/styles/main.scss';
 
 const App = () => (
   <div>
     <CommonsStateWrapper>
+      <CommonsNavHeader/>
       <CampaignHeader />
-      <UserComponent />
     </CommonsStateWrapper>
   </div>
 )

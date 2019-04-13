@@ -14,14 +14,11 @@ const EcosystemDaiAction = ({ buttonName, actionText }) => {
 
   return (
     <div className='eco-dai-action'>
-      <PrimaryButton name={buttonName} onClick={spendFunds} />
+      <PrimaryButton onClick={spendFunds}>{children}</PrimaryButton>
       <p>{actionText}</p>
     </div>
   )
 }
 
-EcosystemDaiAction.propTypes = {
-  buttonName: PropTypes.string.isRequired
-}
 
 export default EcosystemDaiAction

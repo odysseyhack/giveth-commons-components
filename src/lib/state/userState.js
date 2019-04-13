@@ -2,7 +2,10 @@
  * Created by will on 10/04/19.
  */
 export const initialState = {
-  user: null
+  user: {
+    name: "Will",
+    totalBalance: 400000
+  }
 }
 
 export const userActions = {
