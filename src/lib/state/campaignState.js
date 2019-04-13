@@ -20,7 +20,6 @@ export function reducer (state, action) {
     case campaignActions.mintTokens:
 
       console.log('MINT TOKENS', action)
-      // action { fundingAmount, tokenRecipient }
 
       // TODO call library calculate new supply and price
       // TODO update user state
@@ -28,7 +27,6 @@ export function reducer (state, action) {
         ...state
       }
     case campaignActions.burnTokens: {
-      // action { tokenAmount, withdrawalRecipient }
 
       // TODO call library calculate new supply and price
       // TODO update user state
