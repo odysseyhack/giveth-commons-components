@@ -5,11 +5,16 @@ import SecondaryButton from "./components/SecondaryButton";
 import PrimaryButton from "./components/PrimaryButton";
 import UserContext, {UserProvider,} from "./context/User";
 import {userActions} from "./state/userState"
+import {getConviction} from "./state/convictionlib"
 import AugmentedCurveContext, {AugmentedCurveProvider} from './context/AugmentedCurve'
+import ConvictionVotingCurveContext, {ConvictionVotingCurveProvider} from './context/ConvictionVotingCurve'
 import {curveActions} from './state/augmentedCurveState'
+import {cvActions} from './state/convictionVotingCurveState'
 export { CommonsStateWrapper }
 export { CampaignHeader }
 export { DaiAction }
 export { UserContext, UserProvider, userActions }
 export { AugmentedCurveContext, AugmentedCurveProvider, curveActions}
+export { ConvictionVotingCurveContext, ConvictionVotingCurveProvider, cvActions}
 export {PrimaryButton, SecondaryButton}
+export {getConviction}
