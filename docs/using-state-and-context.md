@@ -6,7 +6,7 @@ The high level steps are:
 
 1. Define your state file that exports - initialState, actions and reducer. See userState.js for an example.
 2. Create a context file that consumes the state
-    * Bring in a context using the [useContext]() hook. 
+    * Bring in a context using the [useContext](https://daveceddia.com/usecontext-hook/) hook.
         * ```const UserContext = React.createContext();```
     * Bring in the reducer and initialState from the state file
         *  ```const [state, dispatch] = React.useReducer(reducer, initialState);```
