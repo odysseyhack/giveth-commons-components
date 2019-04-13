@@ -4,13 +4,16 @@
 import React from 'react';
 import { UserProvider } from '../context/User';
 import { AugmentedCurveProvider } from '../context/AugmentedCurve';
+import { MilestoneProvider } from '../context/Milestone'
 
 export const StateWrapper = ({ children }) => {
   return (
     <UserProvider>
-      <AugmentedCurveProvider>
-        {children}
-      </AugmentedCurveProvider>
+      <MilestoneProvider>
+        <AugmentedCurveProvider>
+          {children}
+        </AugmentedCurveProvider>
+      </MilestoneProvider>
     </UserProvider>
   )
 };

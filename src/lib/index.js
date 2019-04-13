@@ -8,9 +8,11 @@ import {userActions} from "./state/userState"
 import AugmentedCurveContext, {AugmentedCurveProvider} from './context/AugmentedCurve'
 import FormField from './stateless-components/FormField';
 import {curveActions} from './state/augmentedCurveState'
+import { MilestoneRedeemer } from "./components/MilestoneRedeemer"
 export { CommonsStateWrapper }
 export { CampaignHeader }
 export { DaiAction }
+export { MilestoneRedeemer }
 export { UserContext, UserProvider, userActions }
 export { AugmentedCurveContext, AugmentedCurveProvider, curveActions}
 export {PrimaryButton, SecondaryButton}
