@@ -9,11 +9,11 @@ import UserContext from '../context/User'
 
 const DaiAction = ({ children, actionText }) => {
   const { dispatch } = React.useContext(UserContext)
-  const spendFunds = () => dispatch({ type: userActions.spend, amount: 5000 })
+  const mintTokens = () => dispatch({ type: userActions.mintTokens, fundingAmount: 5000, tokensBought: 100000 })
 
   return (
     <div className='eco-dai-action'>
-      <PrimaryButton onClick={spendFunds}>{children}</PrimaryButton>
+      <PrimaryButton onClick={mintTokens}>{children}</PrimaryButton>
       <p>{actionText}</p>
     </div>
   )

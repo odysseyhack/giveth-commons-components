@@ -10,12 +10,12 @@ import PrimaryButton from '../stateless-components/PrimaryButton'
 
 const CampaignHeader = ({ backgroundImage }) => {
   const { state, dispatch } = React.useContext(UserContext)
-  const loginUser = () => dispatch({ type: userActions.login, user: { name: 'WILL', totalBalance: 500000 } })
+  const loginUser = () => dispatch({ type: userActions.login, user: { name: 'WILL', balance: 500000 } })
 
   return (
     <div className='eco-header' style={{ backgroundImage: 'url(' + backgroundImage + ')' }}>
       <div className='login'>
-        {state.user ? <div><h1>{state.user.name}</h1><h2>{state.user.totalBalance}</h2></div> : <PrimaryButton name='Login' onClick={loginUser} />}
+        {state.user ? <div><h1>{state.user.name}</h1><h2>{state.user.balance}</h2></div> : <PrimaryButton name='Login' onClick={loginUser} />}
 
       </div>
       <div className='eco-header-content'>
