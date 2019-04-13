@@ -10,13 +10,13 @@ import CampaignContext from '../context/Campaign'
 import UserContext from '../context/User'
 
 const MintTokensAction = ({ buttonName, actionText, fundingAmount }) => {
-  const { dispatch } = React.useContext(CampaignContext)
-  const { state } = React.useContext(UserContext)
+  const { dispatch } = React.useContext(CampaignContext);
+  const {state} = React.useContext(UserContext);
 
   const mintTokens = () => {
-    console.log('MINT', state)
+    console.log("MINT", state)
     dispatch({ type: campaignActions.mintTokens, fundingAmount: fundingAmount, tokenRecipient: state.user.address })
-  }
+  };
 
   return (
     <div className='action'>
@@ -28,6 +28,6 @@ const MintTokensAction = ({ buttonName, actionText, fundingAmount }) => {
 MintTokensAction.propTypes = {
   buttonName: PropTypes.string.isRequired,
   fundingAmount: PropTypes.number.isRequired
-}
+};
 
 export default MintTokensAction

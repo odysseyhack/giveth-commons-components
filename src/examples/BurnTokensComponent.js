@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import { campaignActions } from '../lib/state/campaignState'
-import PrimaryButton from '../lib/stateless-components/PrimaryButton'
+import PrimaryButton from '../lib/stateless-components/PrimaryButton';
 import PropTypes from 'prop-types'
 
 import CampaignContext from '../lib/context/Campaign'
