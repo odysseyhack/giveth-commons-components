@@ -2,7 +2,7 @@
  * Created by will on 10/04/19.
  */
 import React from 'react'
-import DaiAction from './DaiAction'
+import MintTokensAction from './MintTokensAction'
 import Givethers from './Givethers'
 import UserContext from '../context/User'
 import { userActions } from '../state/userState'
@@ -24,8 +24,8 @@ const CampaignHeader = ({ backgroundImage }) => {
 
         <h1>Planting seeds in South Indonesian Forests</h1>
         <div className='row'>
-          <DaiAction actionText='1510 DAI Donated' >Donate DAI</DaiAction>
-          <DaiAction actionText='500000 DAI Delegated' >Delegate Funds</DaiAction>
+          <MintTokensAction actionText='1510 DAI Donated' >Donate DAI</MintTokensAction>
+          <MintTokensAction actionText='500000 DAI Delegated' >Delegate Funds</MintTokensAction>
           <Givethers count={488} />
         </div>
       </div>

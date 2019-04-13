@@ -9,6 +9,7 @@ const App = () => (
     <CommonsStateWrapper>
       <CommonsNavHeader />
       <CampaignHeader />
+
     </CommonsStateWrapper>
   </div>
 )

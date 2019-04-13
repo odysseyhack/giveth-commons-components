@@ -3,19 +3,15 @@
  */
 import React from 'react'
 import { UserProvider } from '../context/User'
-import { AugmentedCurveProvider } from '../context/AugmentedCurve'
-import { ConvictionVotingCurveProvider } from '../context/ConvictionVotingCurve'
+
+import { CampaignProvider } from '../context/Campaign'
 
 export const StateWrapper = ({ children }) => {
   return (
     <UserProvider>
-      <AugmentedCurveProvider>
-        <ConvictionVotingCurveProvider>
-          {children}
-        </ConvictionVotingCurveProvider>
-      </AugmentedCurveProvider>
+      <CampaignProvider>
+        {children}
+      </CampaignProvider>
     </UserProvider>
   )
 }
-
-// export default StateWrapper;
