@@ -2,13 +2,13 @@
  * Created by will on 10/04/19.
  */
 import React from 'react'
-import EcosystemDaiAction from './DaiAction'
+import DaiAction from './DaiAction'
 import Givethers from './Givethers'
 import UserContext from '../context/User'
 import { userActions } from '../state/userState'
 import PrimaryButton from '../stateless-components/PrimaryButton'
 
-const EcosystemHeader = () => {
+const CampaignHeader = () => {
   const { state, dispatch } = React.useContext(UserContext)
   const loginUser = () => dispatch({ type: userActions.login, user: { name: 'WILL', totalBalance: 500000 } })
 
@@ -24,8 +24,8 @@ const EcosystemHeader = () => {
 
         <h1>Planting seeds in South Indonesian Forests</h1>
         <div className='row'>
-          <EcosystemDaiAction buttonName='Donate DAI' actionText='1510 DAI Donated' />
-          <EcosystemDaiAction buttonName='Delegate Funds' actionText='500000 DAI Delegated' />
+          <DaiAction actionText='1510 DAI Donated' >Donate DAI</DaiAction>
+          <DaiAction actionText='500000 DAI Delegated' >Delegate Funds</DaiAction>
           <Givethers count={488} />
         </div>
       </div>
@@ -39,4 +39,4 @@ const EcosystemHeader = () => {
   )
 }
 
-export default EcosystemHeader
+export default CampaignHeader
