@@ -6,7 +6,7 @@ import EcosystemDaiAction from './DaiAction';
 import Givethers from './Givethers';
 import UserContext from '../context/User';
 import {userActions} from '../state/userState';
-import PrimaryButton from './PrimaryButton';
+import PrimaryButton from '../stateless-components/PrimaryButton';
 
 const EcosystemHeader = () => {
   const {state, dispatch} = React.useContext(UserContext);

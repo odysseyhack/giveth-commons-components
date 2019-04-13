@@ -1,8 +1,8 @@
 import { StateWrapper as CommonsStateWrapper } from "./state/StateWrapper";
 import CampaignHeader from "./components/CampaignHeader";
 import DaiAction from "./components/DaiAction";
-import SecondaryButton from "./components/SecondaryButton";
-import PrimaryButton from "./components/PrimaryButton";
+import SecondaryButton from "./stateless-components/SecondaryButton";
+import PrimaryButton from "./stateless-components/PrimaryButton";
 import UserContext, {UserProvider,} from "./context/User";
 import {userActions} from "./state/userState"
 import AugmentedCurveContext, {AugmentedCurveProvider} from './context/AugmentedCurve'
