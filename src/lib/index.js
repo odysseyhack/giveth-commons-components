@@ -8,6 +8,7 @@ import { userActions } from './state/userState'
 import FormField from './stateless-components/FormField'
 import CampaignContext, { CampaignProvider } from './context/Campaign';
 import {campaignActions} from './state/campaignState';
+import BurnTokensAction from './components/BurnTokensAction';
 import { getConviction } from './state/convictionlib'
 import ConvictionVotingCurveContext, { ConvictionVotingCurveProvider } from './context/ConvictionVotingCurve'
 import { cvActions } from './state/convictionVotingCurveState'
@@ -17,6 +18,7 @@ export { CampaignHeader }
 export { MintTokensAction }
 export { UserContext, UserProvider, userActions }
 export { CampaignContext, CampaignProvider, campaignActions}
+export {BurnTokensAction}
 export { PrimaryButton, SecondaryButton }
 // Stateless components
 export { FormField }
