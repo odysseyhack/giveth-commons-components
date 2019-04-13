@@ -1,18 +1,16 @@
 # Maintaining the Commons Ecosystem Library
 
-This file outlines directions for how to maintain the ecosystem library so all the Giveth teams working at the hackathon can benifit from the work of other.
+This file outlines directions for how to contribute to this repository.
 
-## Versioning
-
-I would like to follow GitFlow type versioning. Where features are done in separate branches, rebased to develop and tested against a project before being merged back to develop and bumping the version.
+We follow a Gitflow-like workflow. The default branch of this repository is `master` and it's protected so that we can only change it via pull request. If you want to add your contributions, just do so in a feature branch and start a pull request for a colleague to take a look before merging. Before merging, we should make sure that nothing breaks and that the version is bumped.
 
 ## Styling
 
-At a minimum this library can be used to import common styles currently defined under src/assets/styles/main.scss. The idea being that we can have commonly style components across all our projects by just adding some classNames. See _button.scss for an example.
+At a minimum this library can be used to import common styles currently defined under src/assets/styles/main.scss. The idea being that we can have commonly style components across all our projects by just adding some classNames. See _button.scss_ for an example.
 
 ## Components
 
-Development of shared components is something we should consider. My recommendation would be everyone develops components first in their own project and then generalises. 
+Development of shared components is something we should consider. My recommendation would be everyone develops components first in their own project and then generalises.
 
 * Communicate with other teams, understand how the would use the component
 * Code must follow DoD.
