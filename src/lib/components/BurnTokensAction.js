@@ -10,13 +10,13 @@ import CampaignContext from '../context/Campaign'
 import UserContext from '../context/User'
 
 const BurnTokensAction = ({ buttonName, actionText, tokenAmount }) => {
-  const { dispatch } = React.useContext(CampaignContext);
-  const {state} = React.useContext(UserContext);
+  const { dispatch } = React.useContext(CampaignContext)
+  const { state } = React.useContext(UserContext)
 
   const burnTokens = () => {
-    console.log("MINT", state)
+    console.log('MINT', state)
     dispatch({ type: campaignActions.burnTokens, fundingAmount: tokenAmount, withdrawalRecipient: state.user.address })
-  };
+  }
 
   return (
     <div className='action'>
@@ -28,6 +28,6 @@ const BurnTokensAction = ({ buttonName, actionText, tokenAmount }) => {
 BurnTokensAction.propTypes = {
   buttonName: PropTypes.string.isRequired,
   tokenAmount: PropTypes.number.isRequired
-};
+}
 
 export default BurnTokensAction

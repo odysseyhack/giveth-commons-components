@@ -30,19 +30,19 @@ export const initialState = {
 
     // OBJECTS
     // TODO: link to a nomination?
-    nomination: null,
+    nomination: null
   }
 }
 
 export const milestoneActions = {
-  donate: "DONATE",
-  nominate: "NOMINATE",
-  redeem: "REDEEM",
-  markDone: "COMPLETE",
-  markValidated: "VALIDATE",
-};
+  donate: 'DONATE',
+  nominate: 'NOMINATE',
+  redeem: 'REDEEM',
+  markDone: 'COMPLETE',
+  markValidated: 'VALIDATE'
+}
 
-export function reducer(state, action) {
+export function reducer (state, action) {
   switch (action.type) {
     case milestoneActions.donate: {
       return {

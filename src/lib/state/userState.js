@@ -3,7 +3,7 @@
  */
 export const initialState = {
   user: {
-    name: "Will",
+    name: 'Will',
     address: 12345,
     balance: 10000,
     tokenBalance: 1000
@@ -15,7 +15,7 @@ export const userActions = {
   burnTokens: 'BURN'
 }
 
-export function reducer(state, action) {
+export function reducer (state, action) {
   switch (action.type) {
     case userActions.mintTokens:
       return {
@@ -24,7 +24,7 @@ export function reducer(state, action) {
           balance: state.user.balance - action.fundingAmount,
           tokenBalance: state.user.tokenBalance + action.tokensBought
         }
-      };
+      }
     case userActions.burnTokens:
       return {
         ...state,
@@ -32,6 +32,6 @@ export function reducer(state, action) {
           balance: state.user.balance + action.withdrawalAmount,
           tokenBalance: state.user.tokenBalance - action.tokensBurnt
         }
-      };
+      }
   }
 }

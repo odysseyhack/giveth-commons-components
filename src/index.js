@@ -1,15 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { CampaignHeader, CommonsStateWrapper, CommonsNavHeader } from './lib'
-
-import './lib/assets/styles/main.scss'
+import { CommonsStateWrapper, MintTokensAction, BurnTokensAction } from './lib'
 
 const App = () => (
   <div>
     <CommonsStateWrapper>
-      <CommonsNavHeader />
-      <CampaignHeader />
-
+      <MintTokensAction buttonName='Mint tokens' fundingAmount={1000} />
+      <BurnTokensAction buttonName='Burn tokens' fundingAmount={100} />
     </CommonsStateWrapper>
   </div>
 )

@@ -2,11 +2,12 @@
  * Created by will on 10/04/19.
  */
 import React from 'react'
-import MintTokensAction from './MintTokensAction'
+
 import Givethers from './Givethers'
 import UserContext from '../context/User'
 import { userActions } from '../state/userState'
 import PrimaryButton from '../stateless-components/PrimaryButton'
+import MintTokensAction from './MintTokensAction'
 
 const CampaignHeader = ({ backgroundImage }) => {
   const { state, dispatch } = React.useContext(UserContext)
