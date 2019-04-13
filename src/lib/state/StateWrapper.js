@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import { UserProvider } from '../context/User'
-import { CampaignProvider} from '../context/Campaign'
+import { CampaignProvider } from '../context/Campaign'
 
 export const StateWrapper = ({ children }) => {
   return (
