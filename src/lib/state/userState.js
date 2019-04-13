@@ -3,19 +3,19 @@
  */
 export const initialState = {
   user: null
-};
+}
 
 export const userActions = {
   login: 'LOGIN',
   spend: 'SPEND'
 }
 
-export function reducer(state, action) {
+export function reducer (state, action) {
   switch (action.type) {
     case userActions.login:
       return {
         ...state,
-        user: action.user,
+        user: action.user
       }
     case userActions.spend:
 
@@ -25,6 +25,6 @@ export function reducer(state, action) {
           name: state.user.name,
           totalBalance: state.user.totalBalance - action.amount
         }
-      } : state;
-}
+      } : state
+  }
 }

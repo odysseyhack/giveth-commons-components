@@ -4,14 +4,14 @@
 export const initialState = {
   curveName: "Will's Crowdfunding Campaign",
   tokenPrice: 10,
-  tokenSupply: 20000,
+  tokenSupply: 20000
 }
 
 export const curveActions = {
-  buyTokens: "BUY"
-};
+  buyTokens: 'BUY'
+}
 
-export function reducer(state, action) {
+export function reducer (state, action) {
   switch (action.type) {
     case curveActions.buyTokens:
       return {
@@ -22,7 +22,7 @@ export function reducer(state, action) {
   }
 }
 
-function calculateNewPrice(curve, amount) {
+function calculateNewPrice (curve, amount) {
   // TODO some maths
-  return curve.tokenPrice + (amount * 0.1);
+  return curve.tokenPrice + (amount * 0.1)
 }
