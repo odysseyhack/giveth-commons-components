@@ -7,7 +7,7 @@ import PrimaryButton from '../stateless-components/PrimaryButton'
 
 import UserContext from '../context/User'
 
-const EcosystemDaiAction = ({ children, actionText }) => {
+const DaiAction = ({ children, actionText }) => {
   const { dispatch } = React.useContext(UserContext)
   const spendFunds = () => dispatch({ type: userActions.spend, amount: 5000 })
 
@@ -19,5 +19,4 @@ const EcosystemDaiAction = ({ children, actionText }) => {
   )
 }
 
-
-export default EcosystemDaiAction
+export default DaiAction

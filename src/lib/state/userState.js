@@ -3,7 +3,7 @@
  */
 export const initialState = {
   user: {
-    name: "Will",
+    name: 'Will',
     totalBalance: 400000
   }
 }
