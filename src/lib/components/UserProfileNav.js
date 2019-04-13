@@ -13,7 +13,7 @@ const UserProfileNav = () => {
       </p>
       <img src={process.env.PUBLIC_URL + '/images/profile.png'} />
       <p>
-        {state.user.totalBalance}
+        {state.user.balance}
       </p>
     </div>
   )

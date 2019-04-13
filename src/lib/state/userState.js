@@ -6,28 +6,32 @@ export const initialState = {
     name: "Will",
     address: 12345,
     balance: 10000,
-    tokenBalance: [{
-      tokenId: 1,
-      balance: 1000
-    }]
+    tokenBalance: 1000
   }
 }
 
 export const userActions = {
-  login: 'LOGIN',
-  spend: 'SPEND'
+  mintTokens: 'MINT',
+  burnTokens: 'BURN'
 }
 
 export function reducer(state, action) {
   switch (action.type) {
-    case userActions.login:
+    case userActions.mintTokens:
       return {
-        ...state
+        ...state,
+        user: {
+          balance: state.user.balance - action.fundingAmount,
+          tokenBalance: state.user.tokenBalance + action.tokensBought
+        }
       };
-    case userActions.spend:
-
+    case userActions.burnTokens:
       return {
-        ...state
-      }
+        ...state,
+        user: {
+          balance: state.user.balance + action.withdrawalAmount,
+          tokenBalance: state.user.tokenBalance - action.tokensBurnt
+        }
+      };
   }
 }
