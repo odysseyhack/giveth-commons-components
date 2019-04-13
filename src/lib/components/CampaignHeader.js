@@ -2,7 +2,7 @@
  * Created by will on 10/04/19.
  */
 import React from 'react'
-import EcosystemDaiAction from './DaiAction'
+import EcosystemDaiAction from './MintTokensAction'
 import Givethers from './Givethers'
 import UserContext from '../context/User'
 import { userActions } from '../state/userState'

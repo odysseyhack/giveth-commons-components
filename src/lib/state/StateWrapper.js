@@ -3,16 +3,14 @@
  */
 import React from 'react'
 import { UserProvider } from '../context/User'
-import { AugmentedCurveProvider } from '../context/AugmentedCurve'
+import { CampaignProvider} from '../context/Campaign'
 
 export const StateWrapper = ({ children }) => {
   return (
     <UserProvider>
-      <AugmentedCurveProvider>
+      <CampaignProvider>
         {children}
-      </AugmentedCurveProvider>
+      </CampaignProvider>
     </UserProvider>
   )
 }
-
-// export default StateWrapper;
