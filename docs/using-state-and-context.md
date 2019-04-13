@@ -1,6 +1,6 @@
 # Using State and Context
 
-We manage state using the [Context Apps](FILL) and [Hooks](fill).
+We manage state using React [Contexts](https://reactjs.org/docs/context.html) and [Hooks](https://reactjs.org/docs/hooks-intro.html).
 
 The high level steps are:
 
