@@ -1,12 +1,18 @@
 button {
+  font-size: 16px;
   &.eco {
     padding: 10px 20px;
-    box-shadow: 1px 1px 1px 1px darkcyan;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     &.primary {
       color: palette(secondary);
-      background-color: palette(primary);
+      background: linear-gradient(270deg, #1bdd9d 0%, #2cc9cc 100%);
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 0.5rem;
+      }
     }
 
     &.secondary {
@@ -14,6 +20,9 @@ button {
       background-color: palette(secondary);
     }
 
+    &.disabled {
+      background: palette(disabled);
+    }
 
     &:focus {
       outline: none;
@@ -24,4 +33,8 @@ button {
       cursor: pointer;
     }
   }
+}
+
+.eco-dai-action {
+  font-size: 14px;
 }
